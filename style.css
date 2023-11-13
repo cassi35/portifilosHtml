@@ -7,7 +7,7 @@
 }
 *{
     margin: 0;
-    padding: 0%;
+  padding:   0%;
     box-sizing: border-box;
     font-family: var(--fonte-padrao);
     color: rgba(255, 255, 255, 0.564);
@@ -55,6 +55,9 @@ display: flex;
 height: 100vh;
 align-items: center;
 padding: 0 10%;
+background: url(mans.png) no-repeat;
+background-size: contain;
+background-position: right;
 }
 article.home-conteudo{
     max-width: 600px;
@@ -100,9 +103,89 @@ border-radius: 10px;
 z-index: 1;
 
 }
+.menu{
+    display: none;
+}
 .btn-box a:nth-child(2){
     background: transparent;
     color: #00abf0;
     border: 2px solid white;
     height: 50px;
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 270px;
+}
+.home-sci a img{
+display: inline-flex;
+width: 40px;
+height: 40px;
+background: transparent;
+align-items: center;
+border: 1px solid #00abf0;
+border-radius: 50%;
+font-size: 20px;
+}
+@media screen and (min-width:368px) and (max-width:1024px){
+    nav a{
+        display: none;
+    }
+
+  .menu{
+    display: inline-block;
+    width: 100%;
+  }
+  .menu a{
+    float: right;
+  }
+article.home-conteudo{
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+}
+article.home-conteudo h1{
+    font-size: 2rem;
+}
+section.home{
+background: none;
+}
+}
+@media screen  and (max-width:368px){
+    nav a{
+        display: none;
+    }
+
+  .menu{
+    display: inline-block;
+    width: 100%;
+  }
+  .menu a{
+    float: right;
+  }
+article.home-conteudo{
+    width: 100%;
+    padding: 50px;
+    margin: auto;
+}
+article.home-conteudo h1{
+    font-size: 1rem;
+}
+article.home-conteudo h3{
+    font-size: 1rem;
+}
+article.home-conteudo p{
+    display: none;
+}
+section.home{
+background: none;
+}
+    .btn-box{
+        width: 50px;
+        background-color: #00abf0;
+    }
+    .btn-box a{
+        font-size: 0.8em;
+        background-color: #00abf0;
+    }
 }
